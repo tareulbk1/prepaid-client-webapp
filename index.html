@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>প্রি-পেইড গ্রাহক তালিকা</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <h1>📋 প্রি-পেইড গ্রাহক তালিকা</h1>
+    </div>
+  </nav>
+
+  <div class="container">
+    <input type="text" id="search" placeholder="খুঁজুন...">
+    
+    <button id="add-btn">+ নতুন গ্রাহক</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>মিটার নম্বর</th>
+          <th>গ্রাহকের নাম</th>
+          <th>ঠিকানা</th>
+          <th>ফোন</th>
+        </tr>
+      </thead>
+      <tbody id="client-list">
+        <!-- JavaScript will populate this -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="client-modal">
+    <div class="modal-content">
+      <h2>নতুন গ্রাহক যোগ করুন</h2>
+      <input type="text" id="meter" placeholder="মিটার নম্বর">
+      <input type="text" id="name" placeholder="গ্রাহকের নাম">
+      <input type="text" id="address" placeholder="ঠিকানা">
+      <input type="text" id="phone" placeholder="ফোন নম্বর">
+      <div class="modal-actions">
+        <button id="save-btn">সংরক্ষণ করুন</button>
+        <button id="cancel-btn">বাতিল</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
